@@ -1,0 +1,13 @@
+n=int(input())
+num=input()
+num=[int(n) for n in num.split()]
+sum=0
+midsum=0
+for i in num:
+    #number=int(input())
+    midsum=midsum+i
+    if midsum<0:
+        midsum=0
+    else:
+        sum=max(sum,midsum)
+print(sum,end="")
